@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
+import { Table } from 'react-bootstrap';
 
-class CompetitorTable extends Component {
+function CompetitorTable(props) {
+  const competitors = props.competitors;
+  let keys = props.keys;
 
-  render() {
-    return(
-      <div></div>
-    )
-  }
+  return(
+    <div>
+      <Table responsive>
+        <thead>
+          <tr>{keys.map( key => <th>{key}</th>)}</tr>
+        </thead>
+        <tbody>
+            {competitors.map( competitor =>
+              <tr>
+                {keys.map( key => <td>{competitor[key]}</td>)}
+              </tr>
+            )}
+        </tbody>
+      </Table>
+    </div>
+  );
 }
 
 export default CompetitorTable;

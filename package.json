@@ -1,0 +1,28 @@
+{
+  "name": "react-badges",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babyparse": "^0.4.6",
+    "bootstrap": "^3.3.7",
+    "dsv-loader": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "papaparse": "^4.3.5",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.2",
+    "react-dom": "^15.6.1",
+    "react-file-reader": "^1.1.1",
+    "react-file-reader-input": "^1.1.3",
+    "react-router-dom": "^4.1.2",
+    "react-simple-file-input": "^1.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

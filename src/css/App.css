@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.nametag {
+  height: 8cm;
+  width: 12cm;
+}
+
+.front {
+  display:inline-block;
+  width: 6cm;
+  margin: 5 5 5 5;
+}
+
+.back {
+  display:inline-block;
+  width: 6cm;
+}
+
+li span {
+  position: relative;
+  left: 10px;
+}
+
+ul.events {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    list-style-type: none;
+    font-size: 18px;
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+  div.nametag {
+    page-break-inside: avoid;
+  }
+}

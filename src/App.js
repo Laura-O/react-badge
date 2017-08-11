@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import {Route} from 'react-router-dom';
 import Papa from 'papaparse';
 import ReactFileReader from 'react-file-reader';
@@ -8,12 +8,24 @@ import NameTags from './components/NameTags'
 
 class App extends Component {
   constructor(props) {
-        super(props);        
+        super(props);
+        
         this.state = {
             competitors: [],
             keys: []
         };
     }
+  
+  componentDidMount() {
+    const cachedCompetitors = JSON.parse(localStorage.getItem('competitors'));
+    console.log(cachedCompetitors)
+    if (cachedCompetitors) {
+      this.setState( {
+        competitors: cachedCompetitors,
+        keys: Object.keys(cachedCompetitors[0])
+      })
+    }
+  }
 
   handleFiles = files => {
     Papa.parse(files[0], {
@@ -23,6 +35,8 @@ class App extends Component {
               competitors: results.data,
               keys: Object.keys(results.data[0])
           });
+          localStorage.setItem("competitors", JSON.stringify(results.data));
+          console.log(results.data)
         }
       });
   }

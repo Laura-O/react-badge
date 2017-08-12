@@ -1,6 +1,7 @@
 import React from 'react';
 import { Textfit } from 'react-textfit';
 import CompetitorEvents from './CompetitorEvents'
+import ExtraInfo from './ExtraInfo'
 
 function Competitor(props) {
     const events = ['333', '222', '444', '555', '666', '777', '333bf',
@@ -14,6 +15,7 @@ function Competitor(props) {
         <div className="front">          
           <Textfit mode="single">{competitor.first}</Textfit>
           <div className="last">{competitor.last}</div>
+          <ExtraInfo competitor={competitor} />
         </div>        
         <div className="back">
           <CompetitorEvents events={events} competitor={competitor} />          

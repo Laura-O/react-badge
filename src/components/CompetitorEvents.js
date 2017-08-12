@@ -6,7 +6,9 @@ function CompetitorEvents(props) {
   
   const fields = events.map(function(event, index){
     return(
-      <li className={"cubing-icon event-" + event} key={index}><span className="groupnumber">{competitor[event]}</span></li>
+      <li className={"cubing-icon event-" + event} key={index}>
+        <span className="groupnumber">{competitor[event]}</span>
+      </li>
     )
   })
   

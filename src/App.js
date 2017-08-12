@@ -36,7 +36,6 @@ class App extends Component {
               keys: Object.keys(results.data[0])
           });
           localStorage.setItem("competitors", JSON.stringify(results.data));
-          console.log(results.data)
         }
       });
   }
@@ -50,14 +49,15 @@ class App extends Component {
         </ReactFileReader>
         
         <Route exact path='/' render={() => (
-            <CompetitorTable
+            <NameTags
               competitors={this.state.competitors}
               keys={this.state.keys}
             />
           )}
         />
-        <Route exact path='/nametags' render={() => (
-            <NameTags
+        
+        <Route exact path='/competitors' render={() => (
+            <CompetitorTable
               competitors={this.state.competitors}
               keys={this.state.keys}
             />

@@ -10,12 +10,14 @@
 .front {
   display:inline-block;
   width: 6cm;
-  margin: 5 5 5 5;
+  height: 8cm;
+  float:left;
 }
 
 .back {
   display:inline-block;
   width: 6cm;
+  height: 8cm;
 }
 
 li span {
@@ -32,7 +34,7 @@ ul.events {
 }
 @page {
   size: A4;
-  margin: 0;
+  margin: 30px 10px 10px 10px;
 }
 @media print {
   html, body {

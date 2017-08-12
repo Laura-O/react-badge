@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './css/App.css';
 import {Route} from 'react-router-dom';
 import Papa from 'papaparse';
-import ReactFileReader from 'react-file-reader';
-import CompetitorTable from './components/CompetitorTable'
-import NameTags from './components/NameTags'
-import Navigation from './components/Navigation'
+import CompetitorTable from './components/CompetitorTable';
+import NameTags from './components/NameTags';
+import Navigation from './components/Navigation';
+import Settings from './components/Settings'
 
 class App extends Component {
   constructor(props) {
@@ -45,10 +45,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navigation />
-        <ReactFileReader handleFiles={this.handleFiles} fileTypes={'.csv'}>
-          <button className='btn'>Upload</button>
-        </ReactFileReader>
+        <Navigation className="hidden-print" />
+        
+        <Settings handleFiles={(file) => this.handleFiles(file)} />
         
         <Route exact path='/' render={() => (
             <NameTags

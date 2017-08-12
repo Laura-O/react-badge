@@ -5,6 +5,7 @@ import Papa from 'papaparse';
 import ReactFileReader from 'react-file-reader';
 import CompetitorTable from './components/CompetitorTable'
 import NameTags from './components/NameTags'
+import Navigation from './components/Navigation'
 
 class App extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navigation />
         <ReactFileReader handleFiles={this.handleFiles} fileTypes={'.csv'}>
           <button className='btn'>Upload</button>
         </ReactFileReader>

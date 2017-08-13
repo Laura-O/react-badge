@@ -1,7 +1,13 @@
 .App {
   text-align: center;
+  font-size: 16px;
 }
 
+.settings {
+  margin: 10px 10px 20px 10px;
+}
+
+/* Nametags */
 div.tags {
   margin: 5px 20px 5px 20px;
 }
@@ -9,41 +15,36 @@ div.tags {
 .nametag {
   height: 8cm;
   width: 12cm;
-  margin: 5px 2px 5px 2px;
+  margin: 20px 2px 20px 2px;
+  border-bottom: thin dotted grey;
 }
 
 .front {
-  display:inline-block;
-  width: 6cm;
-  height: 8cm;
+  display:inline-block;  
   float:left;
 }
 
 .back {
   display:inline-block;
-  width: 6cm;
-  height: 8cm;
+  float:right;
 }
 
-.settings {
-  margin: 10px 10px 20px 10px;
+.events {
+  -moz-column-count: 2;
+  -moz-columns: 2;
+  -webkit-columns: 2;
+  columns: 2;
+  font-size: 18px;
 }
 
-li span {
-  position: relative;
-  left: 10px;
-}
-
-ul.events {
-    column-count: 2;
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    list-style-type: none;
-    font-size: 18px;
+.cubing-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  text-align: center;
 }
 
 .logo {
-  width: 4cm;
+  width: 120px;
 }
 
 @page {
@@ -54,8 +55,17 @@ ul.events {
   html, body {
     width: 210mm;
     height: 297mm;
+    color: black;
   }
   div.nametag {
     page-break-inside: avoid;
+  }
+  .front {
+    width: 6cm;
+    height: 8cm;
+  }
+  .back {
+    width: 6cm;
+    height: 8cm;
   }
 }

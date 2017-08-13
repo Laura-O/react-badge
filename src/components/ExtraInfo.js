@@ -35,7 +35,7 @@ function Delegate(props) {
     return null;
   }
   return (
-    <div className="delegate">WCA Delegate</div>
+    <span className="delegate">WCA Delegate</span>
   )
 }
 
@@ -44,7 +44,7 @@ function Staff(props) {
     return null;
   }
   return (
-    <div className="staff">Staff</div>
+    <span className="staff">Staff</span>
   )
 }
 

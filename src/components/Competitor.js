@@ -17,7 +17,7 @@ function Competitor(props) {
         <div className="front">
           <Image className="logo" src="/images/nationals_logo2017.png" />
           <Textfit mode="single">{competitor.first}</Textfit>
-          <div className="last">{competitor.last}</div>
+          <span className="last">{competitor.last}</span>
           <ExtraInfo competitor={competitor} />
         </div>        
         <div className="back">

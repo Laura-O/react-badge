@@ -6,7 +6,7 @@ function EmojiField(props) {
     
   return(
     <div>
-      <span dangerouslySetInnerHTML={{__html: emoji}} />      
+      <span dangerouslySetInnerHTML={{__html: emoji}} />
     </div>
   )
 }

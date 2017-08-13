@@ -1,4 +1,5 @@
 import React from 'react';
+import EmojiField from './EmojiField'
 
 function ExtraInfo(props) {
   const numComps = props.competitor.comps;
@@ -10,6 +11,7 @@ function ExtraInfo(props) {
       <CompetitionNumber numComps={numComps} />      
       <Delegate delegate={delegate} />
       <Staff staff={staff} />
+      <EmojiField numComps={numComps} delegate={delegate}/>
     </div>
   )    
 }

@@ -2,9 +2,14 @@
   text-align: center;
 }
 
+div.tags {
+  margin: 5px 20px 5px 20px;
+}
+
 .nametag {
   height: 8cm;
   width: 12cm;
+  margin: 5px 2px 5px 2px;
 }
 
 .front {
@@ -20,6 +25,10 @@
   height: 8cm;
 }
 
+.settings {
+  margin: 10px 10px 20px 10px;
+}
+
 li span {
   position: relative;
   left: 10px;
@@ -32,6 +41,11 @@ ul.events {
     list-style-type: none;
     font-size: 18px;
 }
+
+.logo {
+  width: 4cm;
+}
+
 @page {
   size: A4;
   margin: 30px 10px 10px 10px;

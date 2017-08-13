@@ -47,9 +47,9 @@ class App extends Component {
       <div className="App">
         <Navigation className="hidden-print" />
         
-        <Settings handleFiles={(file) => this.handleFiles(file)} />
+        <Settings className="hidden-print" handleFiles={(file) => this.handleFiles(file)} />
         
-        <Route exact path='/' render={() => (
+        <Route exact path='/' render={() => (          
             <NameTags
               competitors={this.state.competitors}
               keys={this.state.keys}

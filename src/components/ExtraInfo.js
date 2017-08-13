@@ -1,16 +1,13 @@
 import React from 'react';
-import Emojione  from 'emojione';
 
 function ExtraInfo(props) {
   const numComps = props.competitor.comps;
   const delegate = props.competitor.delegate === '1';
   const staff = props.competitor.staff === '1';
-  let emoji = Emojione.toImage(':smiley:');
   
   return(
     <div>
-      <CompetitionNumber numComps={numComps} />
-      <span dangerouslySetInnerHTML={{__html: emoji}} />
+      <CompetitionNumber numComps={numComps} />      
       <Delegate delegate={delegate} />
       <Staff staff={staff} />
     </div>

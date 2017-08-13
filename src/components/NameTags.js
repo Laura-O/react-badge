@@ -5,9 +5,9 @@ function NameTags(props) {
   const competitors = props.competitors;    
   
   return (
-    <div>
-      {competitors.map( competitor =>
-        <Competitor competitor={competitor}/>          
+    <div className="tags">
+      {competitors.map( (competitor, index) =>
+        <Competitor competitor={competitor} key={index} />          
       )}      
     </div>
     )

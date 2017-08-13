@@ -1,5 +1,7 @@
 import React from 'react';
 import { Textfit } from 'react-textfit';
+import {Image} from 'react-bootstrap';
+
 import CompetitorEvents from './CompetitorEvents'
 import ExtraInfo from './ExtraInfo'
 
@@ -12,7 +14,8 @@ function Competitor(props) {
     
     return (
       <div className="nametag">
-        <div className="front">          
+        <div className="front">
+          <Image className="logo" src="/images/nationals_logo2017.png" />
           <Textfit mode="single">{competitor.first}</Textfit>
           <div className="last">{competitor.last}</div>
           <ExtraInfo competitor={competitor} />

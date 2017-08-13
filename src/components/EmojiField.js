@@ -8,7 +8,7 @@ function EmojiField(props) {
 		<div>
 			<ExperienceIcon numComps={numComps} />
 			{props.delegate && <DelegateIcon />}
-			{props.delegate && <StaffIcon />}
+			{props.staff && <StaffIcon />}
 		</div>
 	);
 }

@@ -10,7 +10,7 @@ function ExtraInfo(props) {
 		<div>
 			<CompetitionNumber numComps={numComps} />
 			<Delegate delegate={delegate} />
-			<Staff staff={staff} />
+			{/* <Staff staff={staff} /> */}
 			<EmojiField numComps={numComps} delegate={delegate} />
 		</div>
 	);

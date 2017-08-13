@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900');
 .App {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 16px;
 }

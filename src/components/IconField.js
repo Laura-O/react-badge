@@ -13,12 +13,20 @@ function IconField(props) {
   );
 }
 
-function DelegateIcon() {
-  return <Emoji emoji={'police_officer'} />;
+function DelegateIcon(sex) {
+  if (sex) {
+    return <Emoji emoji={'woman_police_officer'} />;
+  } else {
+    return <Emoji emoji={'police_officer'} />;
+  }
 }
 
-function StaffIcon() {
-  return <Emoji emoji={'man_fairy'} />;
+function StaffIcon(sex) {
+  if (sex) {
+    return <Emoji emoji={'woman_fairy'} />;
+  } else {
+    return <Emoji emoji={'man_fairy'} />;
+  }
 }
 
 function ExperienceIcon(props) {

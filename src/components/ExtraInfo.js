@@ -12,7 +12,7 @@ function ExtraInfo(props) {
       {delegate && <Delegate delegate={delegate} />}
       {staff && !delegate && <Staff staff={staff} />}
       <CompetitionNumber numComps={numComps} />
-      <IconField numComps={numComps} delegate={delegate} />
+      <IconField numComps={numComps} delegate={delegate} staff={staff} />
     </div>
   );
 }

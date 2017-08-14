@@ -1,78 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900');
 .App {
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 16px;
 }
 
 .settings {
-	margin: 10px 10px 20px 10px;
+  margin: 10px 10px 20px 10px;
 }
 
 /* Nametags */
 div.tags {
-	margin: 5px 20px 5px 20px;
+  margin: 5px 20px 5px 20px;
 }
 
 .nametag {
-	height: 8cm;
-	width: 12cm;
-	margin: 20px 2px 20px 2px;
-	border-bottom: thin dotted grey;
+  height: 8cm;
+  width: 12cm;
+  margin: 20px 2px 20px 2px;
+  border-bottom: thin dotted grey;
 }
 
 .front {
-	display: inline-block;
-	float: left;
+  display: inline-block;
+  float: left;
 }
 
 .back {
-	display: inline-block;
-	float: right;
+  display: inline-block;
+  float: right;
 }
 
 .events {
-	-moz-column-count: 2;
-	-moz-columns: 2;
-	-webkit-columns: 2;
-	columns: 2;
-	font-size: 18px;
+  -moz-column-count: 2;
+  -moz-columns: 2;
+  -webkit-columns: 2;
+  columns: 2;
+  font-size: 20px;
 }
 
 .cubing-icon {
-	vertical-align: middle;
-	margin-right: 5px;
-	text-align: center;
+  vertical-align: middle;
+  margin-right: 5px;
+  text-align: center;
 }
 
 .logo {
-	width: 120px;
+  width: 100px;
+}
+
+.comp-num {
+  font-size: 16px;
 }
 
 .delegate {
-	color: red;
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.staff {
+  color: blue;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icons {
+  margin: 5px;
 }
 
 @page {
-	size: A4;
-	margin: 30px 10px 10px 10px;
+  size: A4;
+  margin: 30px 10px 10px 10px;
 }
+
 @media print {
-	html,
-	body {
-		width: 210mm;
-		height: 297mm;
-		color: black;
-	}
-	div.nametag {
-		page-break-inside: avoid;
-	}
-	.front {
-		width: 6cm;
-		height: 8cm;
-	}
-	.back {
-		width: 6cm;
-		height: 8cm;
-	}
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+    color: black;
+  }
+  div.nametag {
+    page-break-inside: avoid;
+  }
+  .front {
+    width: 6cm;
+    height: 8cm;
+  }
+  .back {
+    width: 6cm;
+    height: 8cm;
+  }
+  .delegate {
+    color: red;
+  }
+  .staff {
+    color: blue;
+  }
 }

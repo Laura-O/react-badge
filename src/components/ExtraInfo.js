@@ -5,14 +5,18 @@ function ExtraInfo(props) {
   const {numComps, sex} = props.competitor;
   const delegate = props.competitor.delegate === '1';
   const staff = props.competitor.staff === '1';
-  console.log(props.competitor.staff);
 
   return (
     <div>
       {delegate && <Delegate delegate={delegate} />}
       {staff && !delegate && <Staff staff={staff} />}
       <CompetitionNumber numComps={numComps} />
-      <IconField numComps={numComps} delegate={delegate} staff={staff} />
+      <IconField
+        numComps={numComps}
+        delegate={delegate}
+        staff={staff}
+        sex={sex}
+      />
     </div>
   );
 }

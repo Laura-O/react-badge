@@ -2,7 +2,7 @@ import React from 'react';
 import IconField from './IconField';
 
 function ExtraInfo(props) {
-  const {numComps, sex} = props.competitor;
+  const {extra, numComps, sex} = props.competitor;
   const delegate = props.competitor.delegate === '1';
   const staff = props.competitor.staff === '1';
 
@@ -16,6 +16,7 @@ function ExtraInfo(props) {
         delegate={delegate}
         staff={staff}
         sex={sex}
+        extra={extra}
       />
     </div>
   );

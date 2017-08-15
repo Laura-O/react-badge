@@ -93,9 +93,9 @@ div.tags {
     height: 8cm;
   }
   .delegate {
-    color: red;
+    color: red !important;
   }
   .staff {
-    color: blue;
+    color: blue !important;
   }
 }

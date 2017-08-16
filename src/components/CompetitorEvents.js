@@ -7,7 +7,7 @@ function CompetitorEvents(props) {
     return (
       <div className="wrapper" key={index}>
         <span className={'cubing-icon event-' + event} />
-        <span>
+        <span className="group">
           {competitor[event]}
         </span>
       </div>

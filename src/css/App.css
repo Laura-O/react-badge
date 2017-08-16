@@ -42,7 +42,10 @@ div.tags {
 .cubing-icon {
   vertical-align: middle;
   margin-right: 5px;
-  text-align: center;
+}
+
+span.group {
+  font-size: 18px;
 }
 
 .logo {
@@ -68,7 +71,6 @@ div.tags {
 .icons {
   margin: 5px;
 }
-
 @page {
   size: A4;
   margin: 30px 10px 10px 10px;

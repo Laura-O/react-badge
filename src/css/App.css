@@ -24,6 +24,7 @@ div.tags {
 .front {
   display: inline-block;
   float: left;
+  border-right: thin dotted grey;
 }
 
 .back {
@@ -68,7 +69,21 @@ span.group {
   font-weight: 600;
 }
 
-.icons {
+.orga {
+  color: green;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+span.last {
+  font-size: 18px;
+}
+
+.competitions {
+  font-size: 14px;
+}
+
+.emojione {
   margin: 5px;
 }
 @page {
@@ -99,5 +114,8 @@ span.group {
   }
   .staff {
     color: blue !important;
+  }
+  .orga {
+    color: green !important;
   }
 }

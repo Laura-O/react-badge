@@ -5,15 +5,18 @@ function ExtraInfo(props) {
   const {extra, numComps, sex} = props.competitor;
   const delegate = props.competitor.delegate === '1';
   const staff = props.competitor.staff === '1';
+  const orga = props.competitor.orga === '1';
 
   return (
     <div>
       {delegate && <Delegate delegate={delegate} />}
-      {staff && !delegate && <Staff staff={staff} />}
+      {orga && !delegate && <Orga orga={orga} />}
+      {staff && !orga && !delegate && <Staff staff={staff} />}
       <CompetitionNumber numComps={numComps} />
       <IconField
         numComps={numComps}
         delegate={delegate}
+        orga={orga}
         staff={staff}
         sex={sex}
         extra={extra}
@@ -37,16 +40,22 @@ function CompetitionNumber(props) {
     }
   }
 
+  let numComps = parseInt(props.numComps) + 1;
+
   return (
-    <div className="comp-num">
-      {props.numComps}
-      {nth(props.numComps)} competition
+    <div className="competitions">
+      {numComps}
+      {nth(numComps)} competition
     </div>
   );
 }
 
 function Delegate(props) {
   return <span className="delegate">WCA Delegate</span>;
+}
+
+function Orga(props) {
+  return <span className="orga">Organizer</span>;
 }
 
 function Staff(props) {

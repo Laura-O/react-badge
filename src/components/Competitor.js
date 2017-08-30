@@ -33,7 +33,7 @@ function Competitor(props) {
     <div className="nametag">
       <div className="front">
         <Image className="logo" src="/images/nationals_logo2017.png" />
-        <Textfit mode="single" max={64}>
+        <Textfit mode="single" max={58}>
           {competitor.first}
         </Textfit>
         <span className="last">
